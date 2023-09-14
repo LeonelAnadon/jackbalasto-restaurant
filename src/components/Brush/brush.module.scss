@@ -1,0 +1,9 @@
+.container {
+  height: 8rem;
+  width: 100%;
+  background-image: url(../../assets/waves/brush2.png);
+  background-size: contain;
+}
+.invert {
+  transform: rotateX(180deg);
+}

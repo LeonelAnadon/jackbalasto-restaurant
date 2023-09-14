@@ -1,0 +1,21 @@
+@use '../../global.scss';
+
+.container {
+  min-height: 30rem;
+  background-color: global.$white;
+  padding-bottom: 1rem;
+
+  h2 {
+    color: black;
+    font-size: 4rem;
+    text-align: center;
+    font-family: "Great Vibes", cursive;
+
+  }
+
+  span {
+    font-family: "Great Vibes", cursive;
+    text-transform: capitalize;
+    color: global.$orange;
+  }
+}

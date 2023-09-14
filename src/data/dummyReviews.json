@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Carlos Rossi",
+    "msg": "Las hamburguesas son simplemente geniales, definitivamente volveré por más.",
+    "stars": 5
+  },
+  {
+    "id": 2,
+    "name": "María Bianchi",
+    "msg": "Excelente comida, el servicio es realmente impresionante. ¡Altamente recomendado!",
+    "stars": 4
+  },
+  {
+    "id": 3,
+    "name": "Diego Romano",
+    "msg": "Las hamburguesas son las mejores que he probado en mi vida, un auténtico placer.",
+    "stars": 4
+  },
+  {
+    "id": 4,
+    "name": "Ana Ferrari",
+    "msg": "El lugar tiene un ambiente agradable y las hamburguesas son absolutamente deliciosas. ¡Volveré pronto!",
+    "stars": 4
+  },
+  {
+    "id": 5,
+    "name": "Luis Moretti",
+    "msg": "Me encantó la variedad de hamburguesas disponibles, definitivamente un lugar para repetir.",
+    "stars": 5
+  },
+  {
+    "id": 6,
+    "name": "Laura Esposito",
+    "msg": "Las hamburguesas son divinas, una experiencia culinaria que no te puedes perder. ¡Volveré una y otra vez!",
+    "stars": 4
+  }
+]

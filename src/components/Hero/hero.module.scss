@@ -1,0 +1,129 @@
+@use "../../global.scss";
+
+.container {
+  margin: var(--global-margin);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  .theTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-top: 3.5rem;
+
+    h1 {
+      font-family: "Anton", sans-serif;
+      font-size: 7rem;
+      line-height: 1.05;
+      white-space: pre-line;
+      @include global.thisTexture;
+    }
+  }
+
+  .firstTitle {
+    display: flex;
+    align-items: center;
+    line-height: 1;
+    position: absolute;
+    top: .5rem;
+
+    h2:first-of-type {
+      font-family: "Anton", sans-serif;
+      @include global.textTexture;
+    }
+    h2:last-of-type {
+      font-family: "Great Vibes", cursive;
+      margin-top: 0.9rem;
+      color: global.$orange;
+    }
+  }
+
+  .bgColor {
+    // background-color: red;
+
+    position: absolute;
+    width: 70%;
+    align-self: center;
+    height: 100%;
+    margin: 0;
+    z-index: -1;
+    opacity: 0.5;
+    border-radius: 50%;
+    filter: blur(90px);
+  }
+
+  .btnContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: .5rem;
+
+    .deliveryContainer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      button {
+        gap: 0.3rem;
+        padding-left: 0.7rem;
+        margin-right: 0.7rem;
+        @include global.thisLinearGradient(global.$red);
+        color: white;
+
+        ion-icon {
+          background-color: black;
+          padding: 0.3rem;
+          border-radius: 50%;
+          color: white;
+          font-size: 0.9rem;
+          transition: all .5s ease;
+        }
+
+        &:hover {
+          ion-icon {
+            transform: rotateZ(360deg);
+          }
+        }
+      }
+
+      a {
+        display: flex;
+        cursor: pointer;
+      }
+
+      img[alt="py"] {
+        max-width: 6rem;
+        mix-blend-mode: luminosity;
+      }
+      img[alt="rappi"] {
+        max-width: 3rem;
+        mix-blend-mode: luminosity;
+      }
+      img:hover {
+        mix-blend-mode: normal;
+      }
+
+      & > div {
+        display: flex;
+        align-items: center;
+      }
+    }
+
+   
+  }
+}
+
+.imgContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  $size: 28rem;
+
+  img {
+    margin-top: 0rem;
+    max-width: 30rem;
+  }
+}

@@ -1,0 +1,78 @@
+@use "../../global.scss";
+
+.container {
+  background-color: global.$white;
+  padding: 2rem 0;
+
+  & > div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+
+    @media (max-width: 900px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  h2 {
+    font-family: "Great Vibes", cursive;
+  }
+  h3 {
+    text-transform: uppercase;
+    margin-bottom: .5rem;
+    color: global.$red;
+  }
+  p {
+    white-space: pre-line;
+  }
+  mark {
+    background-color: global.$yellow;
+  }
+
+  & {
+    color: black;
+  }
+}
+
+.imgCont {
+  min-height: 20rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 0.5rem;
+
+  @media (max-width: 650px) {
+    min-height: 50rem;
+  }
+
+  & > div {
+    position: relative;
+
+    @media (min-width: 1500px) {
+      // &:first-child {
+      //   grid-column: span 2;
+      // }
+      // &:last-child {
+      //   grid-column: span 2;
+      // }
+    }
+    &:first-child {
+      img {
+        border-top-left-radius: 2rem;
+      }
+    }
+    &:last-child {
+      img {
+        border-bottom-right-radius: 2rem;
+      }
+    }
+  }
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

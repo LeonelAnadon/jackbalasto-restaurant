@@ -1,0 +1,11 @@
+{
+  "title": "Historia del Restaurante",
+  "subtitle": "La tradición en cada bocado",
+  "desc": "En el corazón de nuestra ciudad, se encuentra 'Hamburguesas Deliciosas', un refugio culinario donde la pasión por las hamburguesas se fusiona con la tradición gastronómica. Fundado en 1985 por el visionario chef <strong>Miguel Rodríguez</strong>, nuestro restaurante ha sido durante décadas un punto de referencia en la escena gastronómica local.\nDesde el principio, Miguel tenía un objetivo claro: <mark>crear las hamburguesas más deliciosas y auténticas que jamás hayas probado</mark>. Inspirado por las recetas familiares transmitidas de generación en generación, desarrolló una mezcla de carne única, sazonada con especias secretas que hacen que nuestras hamburguesas sean inigualables.\nNuestro restaurante ofrece un ambiente acogedor y familiar donde las generaciones se reúnen para disfrutar de la comida reconfortante que todos aman. Cada hamburguesa es una obra de arte, preparada con cariño y atención a los detalles, desde el pan fresco hasta los ingredientes locales y salsas caseras.",
+  "imgs": [
+    "/src/assets/images/rest1.jpg",
+    "/src/assets/images/rest3.jpg",
+    "/src/assets/images/rest4.jpg",
+    "/src/assets/images/rest2.jpg"
+  ]
+}

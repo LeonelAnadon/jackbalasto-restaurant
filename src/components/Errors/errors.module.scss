@@ -1,0 +1,28 @@
+.burgerNF {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & {
+    color: black;
+  }
+}
+.testimonialNF {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & {
+    color: white;
+  }
+}
+
+.aboutNF {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & {
+    color: black;
+  }
+}

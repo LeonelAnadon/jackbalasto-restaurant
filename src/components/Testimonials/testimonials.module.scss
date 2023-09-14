@@ -1,0 +1,49 @@
+@use '../../global.scss';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2rem;
+
+  h2 {
+    font-size: 4rem;
+    text-align: center;
+    font-family: "Great Vibes", cursive;
+  }
+  .swiperContainer {
+    display: block;
+    // min-height: 22rem;
+  }
+  .slide {
+    min-height: 13rem;
+    display: grid;
+    place-content: center;
+    font-size: 1rem;
+
+    b {
+      text-align: center;
+    }
+    .stars {
+      display: flex;
+      justify-content: center;
+    }
+    p {
+      max-width: 23rem;
+      text-align: center;
+    }
+    span {
+      position: relative;
+      // display: block;
+      text-align: center;
+      height: max-content;
+      margin: -1rem 0 -3rem 0;
+
+      &::before {
+        content: "“";
+        font-size: 5rem;
+        color: global.$orange;
+        font-family: serif;
+      }
+    }
+  }
+}
