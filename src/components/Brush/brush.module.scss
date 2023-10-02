@@ -3,7 +3,10 @@
   width: 100%;
   background-image: url(../../assets/waves/brush2.png);
   background-size: contain;
+  position: relative;
+  top: 2px;
 }
 .invert {
+  top: -2px;
   transform: rotateX(180deg);
 }
