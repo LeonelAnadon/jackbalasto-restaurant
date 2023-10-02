@@ -5,7 +5,8 @@
     "title": "The Classic Burger Supreme",
     "desc": "The Classic Burger Supreme es una deliciosa hamburguesa clásica con ingredientes frescos y un toque especial de salsa secreta. ¡Una experiencia culinaria que no querrás perderte!",
     "price": 3500,
-    "inOffer": null
+    "inOffer": null,
+    "type": "all"
   },
   {
     "id": 2,
@@ -13,7 +14,8 @@
     "title": "Cheesy Fiesta Burger",
     "desc": "La Cheesy Fiesta Burger es una fiesta de sabores en cada mordisco. Con una mezcla de quesos derretidos y crujiente tocino, esta hamburguesa te hará bailar de alegría.",
     "price": 2800,
-    "inOffer": null
+    "inOffer": null,
+    "type": "all"
   },
   {
     "id": 3,
@@ -21,7 +23,8 @@
     "title": "Mushroom Madness Burger",
     "desc": "La Mushroom Madness Burger es una explosión de sabor umami. Los champiñones frescos y salteados se combinan con la carne jugosa para una experiencia verdaderamente deliciosa.",
     "price": 4200,
-    "inOffer": 5150
+    "inOffer": 5150,
+    "type": "offer"
   },
   {
     "id": 4,
@@ -29,7 +32,8 @@
     "title": "Sizzling BBQ Burger Delight",
     "desc": "La Sizzling BBQ Burger Delight es un placer ahumado. Con salsa BBQ casera y cebolla caramelizada, esta hamburguesa te transportará directamente a una parrillada al aire libre.",
     "price": 4800,
-    "inOffer": null
+    "inOffer": null,
+    "type": "all"
   },
   {
     "id": 5,
@@ -37,7 +41,8 @@
     "title": "The Veggie Fiesta Burger",
     "desc": "The Veggie Fiesta Burger es una opción sabrosa para los amantes de las verduras. Una jugosa hamburguesa de garbanzos acompañada de guacamole fresco y tomates maduros.",
     "price": 3200,
-    "inOffer": null
+    "inOffer": null,
+    "type": "veggies"
   },
   {
     "id": 6,
@@ -45,6 +50,7 @@
     "title": "Chicken Salsa Sunrise Burger",
     "desc": "La Chicken Salsa Sunrise Burger te despierta con su sabor picante y lleno de energía. Pollo a la parrilla con salsa de tomate y chiles frescos.",
     "price": 3700,
-    "inOffer": null
+    "inOffer": null,
+    "type": "all"
   }
 ]

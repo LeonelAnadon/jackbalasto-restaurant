@@ -67,3 +67,9 @@ section {
     margin: var(--global-margin);
   }
 }
+
+footer {
+  & > div {
+    margin: var(--global-margin);
+  }
+}

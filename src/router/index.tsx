@@ -6,13 +6,11 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
-    errorElement: <ErrorPage />
+    errorElement: <ErrorPage />,
   },
 ]);
 
 const AppRouter = () => {
- 
-
   return <RouterProvider router={router} />;
 };
 

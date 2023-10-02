@@ -1,0 +1,34 @@
+@use "../../global.scss";
+
+.container {
+  display: flex;
+  gap: 1rem;
+
+  ion-icon {
+    font-size: 22px;
+    color: global.$orange;
+
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+.contactInfo {
+  display: flex;
+  align-items: center;
+
+  a {
+    font-size: 1rem;
+    font-family: "Anton", sans-serif;
+    color: global.$red;
+    text-decoration: none;
+
+    &:hover {
+      color: white;
+    }
+  }
+
+
+
+}

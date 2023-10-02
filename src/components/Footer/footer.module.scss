@@ -1,0 +1,48 @@
+@use "../../global.scss";
+
+.footer {
+  min-height: 2rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+
+  & > div {
+    div:first-child {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      justify-content: space-between;
+      flex-flow: row wrap;
+
+      span {
+        font-family: "Dancing Script", cursive;
+        font-size: 2rem;
+        font-weight: bold;
+      }
+
+      ul {
+        display: flex;
+        gap: 1rem;
+      }
+    }
+    div:last-child {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0;
+      gap: .3rem;
+
+      @media (max-width: 800px){
+        align-items: flex-start;
+        flex-direction: column;
+        p {
+          order: 2;
+        }
+      }
+      p {
+        font-size: .8rem;
+      }
+    }
+  }
+}
