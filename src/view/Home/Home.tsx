@@ -14,6 +14,10 @@ import Footer from "../../components/Footer/Footer";
 const Home = () => {
   const [showDrawer, setShowDrawer] = React.useState(false);
 
+  React.useEffect(() => {
+    window.history.replaceState({}, document.title, "/");
+  }, []);
+
   return (
     <>
       <Drawer showDrawer={showDrawer} setShowDrawer={setShowDrawer} />
@@ -25,7 +29,7 @@ const Home = () => {
         <Brush isInverted={false} />
         <Menu />
         <Brush isInverted={true} />
-        <Testimonials  />
+        <Testimonials />
         <About />
         <Chefs />
         <Book />
