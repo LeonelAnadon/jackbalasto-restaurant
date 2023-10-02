@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { IAbout } from "../interfaces/global";
 
 async function fetchData() {
-  const url = "/src/data/dummyAbout.json";
+  const url = "./src/data/dummyAbout.json";
 
   const response = await fetch(url);
 

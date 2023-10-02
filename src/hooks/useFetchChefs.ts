@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { IChefs } from "../interfaces/global";
 
 async function fetchData() {
-  const url = "/src/data/dummyChefs.json";
+  const url = "./src/data/dummyChefs.json";
 
   const response = await fetch(url);
 

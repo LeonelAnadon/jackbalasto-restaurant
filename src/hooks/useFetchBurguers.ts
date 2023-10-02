@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { IBurger } from "../interfaces/global";
 
 async function fetchData() {
-  const url = "/src/data/dummyData.json";
+  const url = "./src/data/dummyData.json";
 
   const response = await fetch(url);
 

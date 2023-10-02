@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { IReviews } from "../interfaces/global";
 
 async function fetchData() {
-  const url = "/src/data/dummyReviews.json";
+  const url = "./src/data/dummyReviews.json";
 
   const response = await fetch(url);
 
