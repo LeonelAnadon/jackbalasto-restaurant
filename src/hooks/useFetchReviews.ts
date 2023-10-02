@@ -4,17 +4,13 @@ import { IReviews } from "../interfaces/global";
 async function fetchData() {
   const url = "/src/data/dummyReviews.json";
 
-  try {
-    const response = await fetch(url);
+  const response = await fetch(url);
 
-    if (!response.ok) {
-      throw new Error("Error reading the JSON");
-    }
-    const data = await response.json();
-    return data;
-  } catch (error) {
-    throw error;
+  if (!response.ok) {
+    throw new Error("Error reading the JSON");
   }
+  const data = (await response.json()) as IReviews[];
+  return data;
 }
 
 function useFetchReviews() {
@@ -30,7 +26,9 @@ function useFetchReviews() {
         setError(err as Error);
       }
     };
-    fetchTheData();
+    fetchTheData().catch((err) => {
+      setError(err as Error);
+    });
   }, []);
 
   return { data, error };

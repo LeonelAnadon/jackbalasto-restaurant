@@ -2,37 +2,7 @@ $orange: #fd5306ff;
 $yellow: #ffc919ff;
 $white: #f0eadeff;
 $red: #ff0000;
-// $white: #f5f5f5ff;
-
-// @mixin resalt-this {
-//   color: transparent;
-//   background: rgb(253, 194, 0);
-//   // background: linear-gradient(90deg, rgb(253, 194, 0) 16%, rgb(247, 89, 255) 94%);
-//   background: linear-gradient(45deg, $sunglow 16%, $purple 94%);
-//   -webkit-background-clip: text;
-//   background-clip: text;
-//   -webkit-text-fill-color: transparent;
-//   position: relative;
-// }
-
-// @mixin line-anim {
-//   &:hover {
-//     &::before {
-//       width: 100%;
-//       background: linear-gradient(45deg, $sunglow 50%, $purple 80%);
-//     }
-//   }
-//   &::before {
-//     content: "";
-//     position: absolute;
-//     left: 0;
-//     bottom: 0;
-//     width: 0;
-//     height: 2px;
-//     background-color: transparent;
-//     transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out;
-//   }
-// }
+$green: #009E76;
 
 @mixin thisTexture {
   background-color: $orange;
@@ -44,18 +14,22 @@ $red: #ff0000;
   -webkit-text-fill-color: transparent;
   color: transparent;
   mix-blend-mode: hard-light;
+
+  @media (max-width: 700px){
+    background-position: 100% 30%;
+  }
 }
 
 @mixin textTexture {
   background-color: white;
-
   background: url(/src/assets/texture/texturetext.jpg) 0 20% / cover repeat;
-
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
   mix-blend-mode: hard-light;
+
+
 }
 
 @mixin thisLinearGradient($color) {

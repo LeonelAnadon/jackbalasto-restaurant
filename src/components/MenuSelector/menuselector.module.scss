@@ -1,0 +1,52 @@
+@use '../../global.scss';
+.container {
+  // width: min(200px, 1000px);
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  & > div {
+    margin: 0 auto;
+    display: flex;
+    // border: 2px solid global.$orange;
+    background-color: lighten(global.$orange, 55%);
+    border-radius: 1rem;
+    // gap: 1rem;
+    overflow: hidden;
+
+    & > div {
+      display: flex;
+      gap: 1rem;
+
+      & label:first-child {
+        border-bottom-left-radius: 1rem;
+        border-top-left-radius: 1rem;
+      }
+    }
+  }
+
+  input[type=radio] {
+    display: none;
+
+    &:checked {
+      & + label {
+        // background-color: global.$orange;
+        @include global.thisLinearGradient(global.$red);
+        color: white;
+      }
+    }
+  }
+  label {
+    padding: .5rem 1.1rem;
+    color: black;
+    user-select: none;
+    position: relative;
+
+    cursor: pointer;
+
+    ion-icon {
+      position: relative;
+      top: .1rem;
+      margin-right: .2rem;
+    }
+  }
+}

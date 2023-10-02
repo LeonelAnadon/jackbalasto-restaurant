@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Luis Santoro",
+    "img": "/src/assets/images/chef/1.png",
+    "job": "Chef Ejecutivo"
+  },
+  {
+    "id": 2,
+    "name": "María Dupont",
+    "img": "/src/assets/images/chef/4.png",
+    "job": "Chef de Cocina"
+  },
+  {
+    "id": 3,
+    "name": "Diego González",
+    "img": "/src/assets/images/chef/3.png",
+    "job": "Chef de Parrilla"
+  },
+  {
+    "id": 4,
+    "name": "Giuseppe Russo",
+    "img": "/src/assets/images/chef/2.png",
+    "job": "Chef de Pastelería"
+  }
+]

@@ -19,8 +19,13 @@ const GridItem: React.FC<IBurger> = (props) => {
           <b>{formatCurrency(props.price)}</b>
         </div>
         {props.inOffer && (
-          <div className={styles.flameOffer}>
+          <div className={styles.flameOffer} title="En oferta">
             <ion-icon name="flash"></ion-icon>
+          </div>
+        )}
+        {props.type === "veggies" && (
+          <div className={styles.flameOffer} title="Comida vegetariana">
+            <ion-icon name="leaf-outline"></ion-icon>
           </div>
         )}
       </div>

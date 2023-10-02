@@ -4,17 +4,13 @@ import { IAbout } from "../interfaces/global";
 async function fetchData() {
   const url = "/src/data/dummyAbout.json";
 
-  try {
-    const response = await fetch(url);
+  const response = await fetch(url);
 
-    if (!response.ok) {
-      throw new Error("Error reading the JSON");
-    }
-    const data = await response.json();
-    return data;
-  } catch (error) {
-    throw error;
+  if (!response.ok) {
+    throw new Error("Error reading the JSON");
   }
+  const data = (await response.json()) as IAbout;
+  return data;
 }
 
 function useFetchAbout() {
@@ -30,7 +26,9 @@ function useFetchAbout() {
         setError(err as Error);
       }
     };
-    fetchTheData();
+    fetchTheData().catch((err) => {
+      setError(err as Error);
+    });
   }, []);
 
   return { data, error };

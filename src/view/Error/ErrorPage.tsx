@@ -14,7 +14,7 @@ const ErrorPage = () => {
       </p>
       <p>
         <i>
-          {(error as { statusText?: string })?.statusText ||
+          {(error as { statusText?: string })?.statusText ??
             (error as Error)?.message}
         </i>
       </p>

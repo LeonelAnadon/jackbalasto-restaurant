@@ -1,0 +1,13 @@
+@use "../../global.scss";
+
+.linklist {
+  a {
+    all: unset;
+    font-size: 0.9rem;
+    cursor: pointer;
+    white-space: nowrap;
+    &:hover {
+      color: global.$orange;
+    }
+  }
+}

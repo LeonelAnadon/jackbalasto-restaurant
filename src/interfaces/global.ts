@@ -5,6 +5,7 @@ export interface IBurger {
   desc: string;
   price: number;
   inOffer: null | number;
+  type: string;
 }
 export interface ICommonErrorInFetch {
   error: string | undefined;
@@ -20,4 +21,19 @@ export interface IAbout {
   subtitle: string;
   desc: string;
   imgs: string[];
+}
+
+export interface IChefs {
+  id: number;
+  name: string;
+  img: string;
+  job: string;
+}
+
+export interface IFormData {
+  name: string;
+  date: string;
+  hour: string;
+  people: string;
+  table: number;
 }

@@ -9,10 +9,6 @@ import Stars from "../Stars/Stars";
 const Testimonials: React.FC = () => {
   const { data, error } = useFetchReviews();
 
-  React.useEffect(() => {
-    console.log({ data });
-  }, [data]);
-
   if (error) {
     return <TestimonialNotFound error={error?.message} />;
   }

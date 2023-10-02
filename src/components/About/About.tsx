@@ -21,7 +21,7 @@ const About: React.FC = () => {
   }
 
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id="acerca-de-nosotros">
       <div>
         <div className={styles.aboutCont}>
           <h2>{data.title}</h2>
