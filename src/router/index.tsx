@@ -4,7 +4,7 @@ import ErrorPage from "../view/Error/ErrorPage";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/jackbalasto",
     element: <Home />,
     errorElement: <ErrorPage />,
   },

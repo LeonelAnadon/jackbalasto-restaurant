@@ -14,9 +14,9 @@ import Footer from "../../components/Footer/Footer";
 const Home = () => {
   const [showDrawer, setShowDrawer] = React.useState(false);
 
-  React.useEffect(() => {
-    window.history.replaceState({}, document.title, "/");
-  }, []);
+  // React.useEffect(() => {
+  //   window.history.replaceState({}, document.title, "/");
+  // }, []);
 
   return (
     <>
