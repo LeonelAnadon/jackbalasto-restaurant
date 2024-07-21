@@ -1,7 +1,8 @@
 {
-  "name": "burguer-split",
+  "name": "jackbalasto_lanadon",
   "private": true,
-  "version": "0.0.0",
+  "homepage":"jackbalasto",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
